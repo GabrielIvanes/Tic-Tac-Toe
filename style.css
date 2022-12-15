@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_wrapper {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.cell {
+  height: 100px;
+  background-color: white;
+  border: Solid black 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cell1,
+#cell2,
+#cell3 {
+  border-top: none;
+}
+
+#cell1,
+#cell4,
+#cell7 {
+  border-left: none;
+}
+
+#cell3,
+#cell6,
+#cell9 {
+  border-right: none;
+}
+
+#cell7,
+#cell8,
+#cell9 {
+  border-bottom: none;
+}
+
+.grille {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  border: none;
+}
+
+.reset {
+  border-radius: 20px;
+  height: 30px;
+  width: 28px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button:active {
+  box-shadow: 0px 0.3px grey;
+  transform: translateY(2px);
+}
+
+.joueurs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.joueur {
+  display: inline-block;
+  border: Solid black;
+  padding: 2px;
+}
+
+.jetonJouer {
+  border: solid black 1px;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(48, 189, 48);
+}
+
+.rond {
+  border: Solid black 2px;
+  border-radius: 100%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.croix {
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rondGrille {
+  border: Solid black 2px;
+  border-radius: 100%;
+  display: inline-block;
+  width: 88px;
+  height: 88px;
+}
+
+.croixGrille {
+  position: absolute;
+  font-size: 88px;
+}
